@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'com.papsign'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.6
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
